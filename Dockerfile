@@ -10,7 +10,7 @@ WORKDIR /app
 COPY --from=build /app/target/*.jar /app/app.jar
 
 # TODO change to prod
-ENV SPRING_PROFILES_ACTIVE=dev
+ENV SPRING_PROFILES_ACTIVE=prod
 
 EXPOSE 8888
 ENTRYPOINT ["java","-jar","/app/app.jar"]
