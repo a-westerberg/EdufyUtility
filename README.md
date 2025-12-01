@@ -44,9 +44,6 @@ This service is **not yet completed**, and currently contains only the basic ske
     - Spring Web
     - Spring Security
     - Eureka Client
-- **Databases:**
-    - MySQL 8.0 (Docker)
-    - H2 (development)
 - **Security:**
     - OAuth2 Resource Server
 
@@ -101,20 +98,5 @@ This service has **no public user or admin endpoints yet**.
 - Part of the `edufy-network` Docker bridge
 
 ---
-
-## 🛢️ MySQL Database
-
-| Name              | User | Pass | Database |
-|-------------------|------|------|----------|
-| edufy_mysql       | assa | assa | main     |
-| edufy_utility_db  | assa | assa | utility  |
-
-- **Connection Example :**
-  ```
-    spring.datasource.url=jdbc:mysql://edufy-mysql:3306/edufy_pod_db
-    spring.datasource.username=assa
-    spring.datasource.password=assa
-    spring.jpa.hibernate.ddl-auto=update
-  ```
 
 > _README made by [Sommar-skog](https://github.com/Sommar-skog)_

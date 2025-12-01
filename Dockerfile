@@ -9,7 +9,6 @@ FROM eclipse-temurin:21-jre-jammy
 WORKDIR /app
 COPY --from=build /app/target/*.jar /app/app.jar
 
-# TODO change to prod
 ENV SPRING_PROFILES_ACTIVE=prod
 
 EXPOSE 8888
